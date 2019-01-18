@@ -5,11 +5,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@EnableAdminServer
-public class AdminClientApplication {
+@EnableAdminServer //开启AdminServer的功能
+public class AdminServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AdminClientApplication.class, args);
+        SpringApplication.run(AdminServerApplication.class, args);
     }
 
 }

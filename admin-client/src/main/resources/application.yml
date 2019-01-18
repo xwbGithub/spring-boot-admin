@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  application:
+    name:  admin-client
+  boot:
+    admin:
+      client:
+        url:  http://127.0.0.1:8080 #指定该client在那个服务端的地址中
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' #显示健康节点（* 表示所有）
+  endpoint:
+    health:
+      # never:细节永远不会显示
+      # always;详细信息显示给所有用户
+      # when_authorized:仅向授权用户显示详细信息。可以使用management.endpoint.health.roles配置授权角色。
+      show-details: always
